@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "mine_factory",
+  "version": "${version}",
+  "name": "MineFactory",
+  "description": "mod description",
+  "authors": [
+    "vani4"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "ru.vani4.minefactory.client.MineFactoryClient"
+    ],
+    "main": [
+      "ru.vani4.minefactory.MineFactory"
+    ]
+  },
+  "mixins": [
+    "MineFactory.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.14",
+    "fabric": "*",
+    "minecraft": "1.19.3"
+  }
+}
